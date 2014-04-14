@@ -184,6 +184,7 @@ h1 {
 h1.title {
   padding-bottom:1em;
   border-bottom:0px;
+  line-height: 40px;
 }
 h2 {
   font-size: 1.5em;
