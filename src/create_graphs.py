@@ -40,4 +40,4 @@ nx.draw(graph, pos, with_labels=False)
 with open('figures/community_graph.json', 'wb') as fp:
     json.dump(data, fp)
 
-plt.show()
+#plt.show()

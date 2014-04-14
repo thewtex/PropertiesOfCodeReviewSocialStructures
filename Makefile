@@ -1,6 +1,6 @@
 all: html
 
-html: PropertiesOfCodeReviewSocialStructures.rst
+html: PropertiesOfCodeReviewSocialStructures.rst json_graphs
 	rst2html.py PropertiesOfCodeReviewSocialStructures.rst index.html
 
 json_graphs: src/create_graphs.py

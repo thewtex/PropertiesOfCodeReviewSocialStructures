@@ -20,6 +20,14 @@ projects developed social structures through mailing lists. In that history, a
 few organizational structures governing the review and integration of code
 have emerged.
 
+.. raw:: html
+
+  <iframe src="figures/bdfl_graph.html" name="bdfl_graph" scrolling="no" seamless="seamless"
+  width="500" height="400"></iframe>
+
+*Figure 1: Graph model of the Benevolent Dictator for Life code review
+social structure.*
+
 The term `Benevolent Dictator for Life
 <https://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life>`_ refers to a
 single individual that controls a project's direction, such as Guido van
