@@ -22,8 +22,8 @@ have emerged.
 
 .. raw:: html
 
-  <iframe src="figures/bdfl_graph.html" name="bdfl_graph" scrolling="no" seamless="seamless"
-  width="500" height="400"></iframe>
+  <iframe src="figures/bdfl_graph.html" name="bdfl_graph" scrolling="no"
+  seamless="seamless" width="500" height="400"></iframe>
 
 *Figure 1: Graph model of the Benevolent Dictator for Life code review
 social structure.*
@@ -44,11 +44,10 @@ repository.
 
 .. raw:: html
 
-  <iframe src="figures/hierachy_graph.html" name="hierachy_graph" scrolling="no" seamless="seamless"
-  width="500" height="400"></iframe>
+  <iframe src="figures/hierarchy_graph.html" name="hierarchy_graph" scrolling="no"
+  seamless="seamless" width="500" height="400"></iframe>
 
-*Figure 1: Graph model of the Benevolent Dictator for Life code review
-social structure.*
+*Figure 2: Graph model of a hierarchical code review social structure.*
 
 Another model that can be considered is the `hierarchical structure
 <http://en.wikipedia.org/wiki/Hierarchy>`_, shown in Figure 2. Familiar from
@@ -57,6 +56,14 @@ who delegate to majors, etc.  The detail and scope of reviews decrease and
 increase, respectively, as they travel up the hierarchy. An example is the
 Linux kernel where Linus Torvalds delegates to lieutenants for the various
 sub-systems of the kernel.
+
+.. raw:: html
+
+  <iframe src="figures/community_graph.html" name="community_graph" scrolling="no"
+  seamless="seamless" width="500" height="400"></iframe>
+
+*Figure 3: Graph model of a community code review social structure.*
+
 
 The third model we'll consider is the `community structure
 <http://en.wikipedia.org/wiki/Community_structure>`_, Figure 3. These
