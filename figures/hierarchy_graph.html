@@ -24,9 +24,9 @@ var width = 500,
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-    .charge(-280)
-    .linkDistance(90)
-    .gravity(0.10)
+    .charge(-150)
+    .linkDistance(15)
+    .gravity(0.20)
     <!--.linkStrength(function(link){-->
       <!--return 0.3 + 0.2 / Math.sqrt(link.weights);-->
       <!--})-->
@@ -36,7 +36,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("bdfl_graph.json", function(error, graph) {
+d3.json("hierarchy_graph.json", function(error, graph) {
   force
       .nodes(graph.nodes)
       .links(graph.links)

@@ -26,7 +26,8 @@ tree_edges = len(graph.edges())
 pos = nx.graphviz_layout(graph, prog='twopi', args='')
 tree_degrees = nx.degree(graph)
 nx.draw(graph, pos, with_labels=False)
-with open('figures/hierachy_graph.json', 'wb') as fp:
+data = json_graph.node_link_data(graph)
+with open('figures/hierarchy_graph.json', 'wb') as fp:
     json.dump(data, fp)
 
 ax = fig.add_subplot(3, 1, 3)
@@ -37,6 +38,7 @@ graph = nx.barabasi_albert_graph(number_of_nodes, 2,
 graph = graph.to_undirected()
 pos = nx.spring_layout(graph, k=0.12, iterations=500)
 nx.draw(graph, pos, with_labels=False)
+data = json_graph.node_link_data(graph)
 with open('figures/community_graph.json', 'wb') as fp:
     json.dump(data, fp)
 

@@ -42,6 +42,14 @@ creating a `pull request
 <https://help.github.com/articles/using-pull-requests>`_ for a single-owner
 repository.
 
+.. raw:: html
+
+  <iframe src="figures/hierachy_graph.html" name="hierachy_graph" scrolling="no" seamless="seamless"
+  width="500" height="400"></iframe>
+
+*Figure 1: Graph model of the Benevolent Dictator for Life code review
+social structure.*
+
 Another model that can be considered is the `hierarchical structure
 <http://en.wikipedia.org/wiki/Hierarchy>`_, shown in Figure 2. Familiar from
 militaries and industrial era corporations, generals delegate to lieutenants,
