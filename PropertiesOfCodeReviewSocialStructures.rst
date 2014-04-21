@@ -70,7 +70,35 @@ The third model we'll consider is the `community structure
 self-organizing networks emerge when members contribute reviews as their
 interest and time permit.  This type of network is encouraged by tools like
 `Gerrit <https://code.google.com/p/gerrit/>`_ or when anyone is encouraged to
-perform a review that shows up on a label rating board. An example is the code
+perform a review that shows up on a label rating board.
+
+Quantifying of Information Transmission and Robustness
+------------------------------------------------------
+
+We can assess models in Figures 1-3 with metrics defined in social network
+theory. In these models, each node represents a person and each edge
+represents a code review.
+
+The size of nodes in the graph visualizations are scaled by a measure of
+information transmission, `closeness centrality
+<http://networkx.lanl.gov/reference/generated/networkx.algorithms.centrality.closeness_centrality.html>`_. The closeness centrality is a normalized measure, with
+values that range from zero to one, that quantifies the inverse of the average
+distance to all other people in the code review network. When closeness
+centrality is high, knowledge is communicated well. High closeness means that
+experiences and knowledge of many peers are transmitted so that individual
+contributions are strengthened by the size of the network.
+
+The color of nodes in the graph visualization are mapped according to how
+critical they are to maintaining communication within the network.  Blue nodes
+have a low `betweenness centrality
+<http://networkx.lanl.gov/reference/generated/networkx.algorithms.centrality.betweenness_centrality.html>`_, red nodes a high betweenness centrality, and purple hued nodes
+are somewhere in the middle. Betweenness centrality is a normalized measure of
+the number of shortest paths that pass through a reviewer.  When there are
+nodes with high betweenness centrality it reflects poorly on the robustness of
+that network -- if the node would fail, communication in the network will
+fall apart.
+
+An example is the code
 review structure of a project I have participated in, the `Insight Toolkit
 <http://itk.org>`_, Figure 4.  Interestingly , the number of reviews performed by
 community members follow a `power law
