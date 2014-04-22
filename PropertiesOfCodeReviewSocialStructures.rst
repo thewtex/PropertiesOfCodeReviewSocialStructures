@@ -72,8 +72,8 @@ interest and time permit.  This type of network is encouraged by tools like
 `Gerrit <https://code.google.com/p/gerrit/>`_ or when anyone is encouraged to
 perform a review that shows up on a label rating board.
 
-Quantifying of Information Transmission and Robustness
-------------------------------------------------------
+Quantifying their Properties
+----------------------------
 
 We can assess models in Figures 1-3 with metrics defined in social network
 theory. In these models, each node represents a person and each edge
@@ -97,6 +97,45 @@ the number of shortest paths that pass through a reviewer.  When there are
 nodes with high betweenness centrality it reflects poorly on the robustness of
 that network -- if the node would fail, communication in the network will
 fall apart.
+
+How the Models Perform
+----------------------
+
+The BDFL model, Figure 1, performs very well in information transmission
+(closeness centrality), but lacks robustness.  Since the central BFDL node is
+involved in all the reviews, they impart their knowledge and pass on
+information from every other participant in the network. However, the central
+BFDL node is also a single point of failure.  Should the central node switch
+jobs, go on vacation, discover a new programming language, get hit by a bus,
+be abducted by aliens, etc., the network will collapse.  The *degree* of the
+central node, how many code reviews that are performed, is also very high.
+This is likely to cause burnout and makes it difficult for the network to
+scale.
+
+While the hierarchical structure in Figure 2 can scale without requiring any
+single node to have a high degree, it fails in both and robustness and information
+transmission properties.  The network is vulnerable to losses at the top of the
+hierarchy.  And the information transmission, visualized as the size of the
+nodes, is poor throughout the entire network.
+
+While the community code review structure in Figure 3 lacks the regularity
+found in Figure 1 or Figure 2, it both has high information transmission
+capabilities and is very robust. While there is not an express BFDL or top of
+the hierarchy, leaders still emerge in this structure. This leading roles are
+determined by actions, e.g. the amount of reviews performed, instead of
+their position in the network. But there are additional requirements in this
+free form organization. Higher amounts of communication are necessary --
+there are more edges than the other models. Also, this situation requires
+tools and objective criteria to make effective decisions; whether to merge a
+patch can depend on whether it passes all
+`unit tests <http://en.wikipedia.org/wiki/Unit_testing>`_, has reached the standard
+testing `code coverage <http://en.wikipedia.org/wiki/Code_coverage>`_, passes
+automated style checks, etc. as opposed to "whether Lieutenant Dan says so."
+
+Conclusions
+-----------
+
+
 
 An example is the code
 review structure of a project I have participated in, the `Insight Toolkit
