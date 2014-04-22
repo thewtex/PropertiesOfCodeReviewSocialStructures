@@ -135,12 +135,25 @@ automated style checks, etc. as opposed to "whether Lieutenant Dan says so."
 Conclusions
 -----------
 
+We have seen that a community code review system is mathematically superior to
+centralized or hierarchical systems in its ability to spread knowledge
+effectively and its vulnerability to people's changing life situations or poor
+performance or burnout. Of course, these are not the only important factors --
+for example, these models do not capture the value of an individual's level of
+experience, which certainly is important.
 
+Also, real projects cannot be cleanly classified in one of these idealized
+models.  An example is the code review structure of a project I have
+participated in, the `Insight Toolkit <http://itk.org>`_, Figure 4.
+Interestingly , the number of reviews performed by community members follow a
+`power law <http://en.wikipedia.org/wiki/BA_model>`_, just like the
+`distribution of code submitted
+<http://www.whust.com/staff/yutao%20ma_files/SEKE2013.pdf>`_. Projects that
+claim to operate under a BFDL model cannot scale without some distributed
+workload.  Projects that claim to operate under a community structure are
+influenced by tenured operations.
 
-An example is the code
-review structure of a project I have participated in, the `Insight Toolkit
-<http://itk.org>`_, Figure 4.  Interestingly , the number of reviews performed by
-community members follow a `power law
-<http://en.wikipedia.org/wiki/BA_model>`_, just like the `distribution of code
-submitted <http://www.whust.com/staff/yutao%20ma_files/SEKE2013.pdf>`_, Figure
-6.
+Finally, it is important to remember that the code review structure is
+secondary to the quality and quantity of those performing code reviews.
+The practice of code reviews in open source communities are an opportunity
+to learn from each other and serve one another.
