@@ -17,6 +17,9 @@ for node, between in betweenness.iteritems():
 closeness = nx.centrality.closeness_centrality(graph)
 for node, close in closeness.iteritems():
     graph.node[node]['closeness'] = close
+degrees = nx.degree(graph)
+for node, deg in degrees.iteritems():
+    graph.node[node]['degree'] = deg
 
 data = json_graph.node_link_data(graph)
 with open(os.path.join(current_dir, '..', 'figures', 'itk_graph.json'), 'wb') as fp:
