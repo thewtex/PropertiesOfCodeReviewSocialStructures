@@ -8,8 +8,8 @@ Code review is a practice that facilitates the rapid collaboration, sharing of
 knowledge, and supreme quality typical in open source projects. The code
 review social structure is a defining characteristic of a project.  What is
 the best social structure for an open source project? In this article, we
-examine this question by analyzing three common models, the benevolent dictor
-for life (BFDL), hierarchy, and community models with two graph theory metrics
+examine this question by analyzing three common models: the benevolent
+dictator for life (BFDL), hierarchy, and community models with two graph theory metrics
 that quantify their robustness and information transmission capabilities.
 
 Code Review Social Structures
@@ -35,7 +35,7 @@ Rossum of the `Python <http://python.org>`_ programming language. For larger
 projects this only applies to issues where there are arguments
 or disputes, but the model taken to totalitarian extremes is represented by Figure
 1. In this model, one person reviews and controls all patches before they are
-committed. This structure is encouraged by tools like
+committed. This structure is fostered by tools like
 `GitHub <https://github.com>`_ when patches are reviewed after `forking
 <https://help.github.com/articles/fork-a-repo>`_ and
 creating a `pull request
@@ -157,21 +157,21 @@ experience.
   </a>
 
 *Figure 4: Code review network of a real project, the Insight Toolkit (ITK).
-Like the other figures, the size of the nodes is related to the closeness
+Like the other figures, the size of the nodes is related to its closeness
 centrality, and the color of nodes is coded by their betweenness centrality.
 The width of edges is related to the number of reviews. Click for* `the full
 visualization <figures/itk_graph.html>`_.
 
 Also, real projects are not cleanly classified in one of these idealized
 models; most are a hybrid of the described models or other models.  An example
-based on real data is the code review structure of a the `Insight Toolkit <http://itk.org>`_,
+based on real data is the code review structure of the `Insight Toolkit <http://itk.org>`_,
 Figure 4.  Projects that claim to operate under a BFDL model cannot scale
 without some distributed workload.  Projects that claim to operate under a
 community structure are influenced by tenured operations.
 
 Finally, it is important to remember that the code review structure is
 secondary to the quality and quantity of those performing code reviews.
-The practice of code reviews in open source communities are an opportunity
+The practice of code reviews in open source communities is an opportunity
 to learn from each other and serve one another.
 
 -------------------------------
